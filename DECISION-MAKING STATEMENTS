@@ -1,0 +1,103 @@
+#Check whether a number is positive or negative
+num = int(input("Enter a number: "))
+
+if num > 0:
+    print("Positive number")
+elif num < 0:
+    print("Negative number")
+else:
+    print("Zero")
+
+#Check whether a number is even or odd
+num = int(input("Enter a number: "))
+
+if num % 2 == 0:
+    print("Even number")
+else:
+    print("Odd number")
+
+#Check whether a person is eligible to vote
+age = int(input("Enter your age: "))
+
+if age >= 18:
+    print("Eligible to vote")
+else:
+    print("Not eligible to vote")
+
+#Find the greater of two numbers
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+
+if a > b:
+    print("First number is greater")
+elif b > a:
+    print("Second number is greater")
+else:
+    print("Both numbers are equal")
+
+#Check whether a student has passed or failed
+marks = int(input("Enter your marks: "))
+
+if marks >= 40:
+    print("Pass")
+else:
+    print("Fail")
+
+#Check whether a number is divisible by 5
+num = int(input("Enter a number: "))
+
+if num % 5 == 0:
+    print("Number is divisible by 5")
+else:
+    print("Number is not divisible by 5")
+
+#Check whether a person is eligible for a driving license
+age = int(input("Enter your age: "))
+
+if age >= 18:
+    print("Eligible for driving license")
+else:
+    print("Not eligible for driving license")
+
+#Display a grade based on student's marks
+marks = int(input("Enter your marks: "))
+
+if marks >= 80 and marks <= 100:
+    print("Grade A")
+elif marks >= 60:
+    print("Grade B")
+elif marks >= 40:
+    print("Grade C")
+elif marks >= 0:
+    print("Fail")
+else:
+    print("Invalid marks")
+
+#Check whether a given year is a leap year
+year = int(input("Enter a year: "))
+
+if (year % 400 == 0) or (year % 4 == 0 and year % 100 != 0):
+    print("Leap year")
+else:
+    print("Not a leap year")
+
+#Create a simple calculator using +, -, * and /
+a = float(input("Enter first number: "))
+b = float(input("Enter second number: "))
+
+operator = input("Enter operator (+, -, *, /): ")
+
+if operator == "+":
+    print("Result:", a + b)
+elif operator == "-":
+    print("Result:", a - b)
+elif operator == "*":
+    print("Result:", a * b)
+elif operator == "/":
+    if b != 0:
+        print("Result:", a / b)
+    else:
+        print("Cannot divide by zero")
+else:
+    print("Invalid operator")
+

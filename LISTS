@@ -1,0 +1,73 @@
+#Find the length of the list using len()
+marks = [85, 45, 67, 32, 90, 55, 38, 72, 60, 25]
+
+print("Total Students:", len(marks))
+
+#Find the total marks using sum()
+marks = [85, 45, 67, 32, 90, 55, 38, 72, 60, 25]
+
+print("Total Marks:", sum(marks))
+
+#Find the highest marks using max()
+marks = [85, 45, 67, 32, 90, 55, 38, 72, 60, 25]
+
+print("Highest Marks:", max(marks))
+
+#Find the lowest marks using min()
+marks = [85, 45, 67, 32, 90, 55, 38, 72, 60, 25]
+
+print("Lowest Marks:", min(marks))
+
+#Sort the marks in ascending order
+marks = [85, 45, 67, 32, 90, 55, 38, 72, 60, 25]
+
+marks.sort()
+
+print("Ascending Order:", marks)
+
+#Sort the marks in descending order
+marks = [85, 45, 67, 32, 90, 55, 38, 72, 60, 25]
+
+marks.sort(reverse=True)
+
+print("Descending Order:", marks)
+
+#Count how many students scored more than 50
+marks = [85, 45, 67, 32, 90, 55, 38, 72, 60, 25]
+
+count = 0
+
+for i in marks:
+    if i > 50:
+        count = count + 1
+
+print("Students Scored More Than 50:", count)
+
+#Count how many students passed (passing marks are 40)
+marks = [85, 45, 67, 32, 90, 55, 38, 72, 60, 25]
+
+count = 0
+
+for i in marks:
+    if i >= 40:
+        count = count + 1
+
+print("Total Students Passed:", count)
+
+#Count how many students failed (passing marks are 40)
+marks = [85, 45, 67, 32, 90, 55, 38, 72, 60, 25]
+
+count = 0
+
+for i in marks:
+    if i < 40:
+        count = count + 1
+
+print("Total Students Failed:", count)
+
+#Calculate the average marks of all students
+marks = [85, 45, 67, 32, 90, 55, 38, 72, 60, 25]
+
+average = sum(marks) / len(marks)
+
+print("Average Marks:", average)

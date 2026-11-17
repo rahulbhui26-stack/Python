@@ -1,0 +1,43 @@
+#Display student's name and marks using a function.
+def student_details(student):
+    print("Name:", student["name"])
+    print("Marks:", student["marks"])
+
+student = {"name": "Rahul", "marks": 85}
+
+student_details(student)
+
+#Find the highest marks from a dictionary.
+def highest_marks(students):
+    return max(students.values())
+
+students = {"Rahul": 85, "Amit": 90, "Priya": 95}
+
+print("Highest Marks:", highest_marks(students))
+
+#Count the number of passed students.
+def passed_students(students):
+    count = 0
+
+    for marks in students.values():
+        if marks >= 40:
+            count = count + 1
+
+    return count
+
+students = {"Rahul": 85, "Amit": 35, "Priya": 75}
+
+print("Passed Students:", passed_students(students))
+
+#Find the total price of all products.
+def total_price(products):
+    total = 0
+
+    for price in products.values():
+        total = total + price
+
+    return total
+
+products = {"Pen": 10, "Book": 50, "Bag": 500}
+
+print("Total Price:", total_price(products

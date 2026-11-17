@@ -1,0 +1,71 @@
+#Create a function that accepts a list and returns its length.
+def find_length(numbers):
+    return len(numbers)
+
+my_list = [10, 20, 30, 40, 50]
+
+result = find_length(my_list)
+print("Length of list:", result)
+
+#Create a function that accepts a list and returns the sum of all elements.
+def find_sum(numbers):
+    return sum(numbers)
+
+my_list = [10, 20, 30, 40, 50]
+
+result = find_sum(my_list)
+print("Sum of elements:", result)
+
+#Create a function that accepts a list and returns the maximum value.
+def find_max(numbers):
+    return max(numbers)
+
+my_list = [10, 25, 15, 40, 30]
+
+result = find_max(my_list)
+print("Maximum value:", result)
+
+#Create a function that accepts a list of marks and returns the number of passed students.
+def count_passed(marks):
+    count = 0
+
+    for mark in marks:
+        if mark >= 40:
+            count += 1
+
+    return count
+
+marks = [85, 35, 60, 25, 75, 40]
+
+result = count_passed(marks)
+print("Number of passed students:", result)
+
+#Create a function that accepts a list of marks and returns the number of failed students.
+def count_failed(marks):
+    count = 0
+
+    for mark in marks:
+        if mark < 40:
+            count += 1
+
+    return count
+
+marks = [85, 35, 60, 25, 75, 40]
+
+result = count_failed(marks)
+print("Number of failed students:", result)
+
+#Create a function that accepts a list and returns a new list containing only even numbers.
+def get_even_numbers(numbers):
+    even_list = []
+
+    for num in numbers:
+        if num % 2 == 0:
+            even_list.append(num)
+
+    return even_list
+
+my_list = [10, 15, 20, 25, 30, 35, 40]
+
+result = get_even_numbers(my_list)
+print("Even numbers:", result)

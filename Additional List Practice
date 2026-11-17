@@ -1,0 +1,104 @@
+#Create a list of 10 student names and display the first five students
+students = ["Rahul", "Amit", "Rohit", "Ankit", "Sumit",
+            "Priya", "Neha", "Riya", "Karan", "Vikas"]
+
+print("First Five Students:", students[:5])
+
+#Create a list of student marks and count how many students scored above 80
+marks = [85, 45, 67, 92, 90, 55, 38, 82, 60, 25]
+
+count = 0
+
+for i in marks:
+    if i > 80:
+        count = count + 1
+
+print("Students Scored Above 80:", count)
+
+#Create a list of marks and count how many students scored between 40 and 60
+marks = [85, 45, 67, 32, 50, 55, 38, 60, 48, 25]
+
+count = 0
+
+for i in marks:
+    if i >= 40 and i <= 60:
+        count = count + 1
+
+print("Students Scored Between 40 and 60:", count)
+
+#Given a list of marks, find the second-highest mark
+marks = [85, 45, 67, 92, 90, 55, 38, 82, 60, 25]
+
+marks.sort(reverse=True)
+
+print("Second Highest Mark:", marks[1])
+
+#Given a list of numbers, count how many numbers are even and odd
+numbers = [10, 15, 20, 25, 30, 35, 40, 45]
+
+even = 0
+odd = 0
+
+for i in numbers:
+    if i % 2 == 0:
+        even = even + 1
+    else:
+        odd = odd + 1
+
+print("Even Numbers:", even)
+print("Odd Numbers:", odd)
+
+#Given a list of numbers, create a new list containing numbers greater than 50
+numbers = [25, 60, 45, 80, 35, 90, 55, 40]
+
+new_list = []
+
+for i in numbers:
+    if i > 50:
+        new_list.append(i)
+
+print("Numbers Greater Than 50:", new_list)
+
+#Given a list of numbers, create a new list containing only even numbers
+numbers = [10, 15, 20, 25, 30, 35, 40, 45]
+
+even_numbers = []
+
+for i in numbers:
+    if i % 2 == 0:
+        even_numbers.append(i)
+
+print("Even Numbers:", even_numbers)
+
+#Given a list of student marks, create two lists: pass_students and fail_students
+marks = [85, 45, 67, 32, 90, 55, 38, 72, 60, 25]
+
+pass_students = []
+fail_students = []
+
+for i in marks:
+    if i >= 40:
+        pass_students.append(i)
+    else:
+        fail_students.append(i)
+
+print("Passed Students:", pass_students)
+print("Failed Students:", fail_students)
+
+#Given a list of product prices, calculate the total price using sum()
+prices = [500, 1200, 750, 300, 900]
+
+total = sum(prices)
+
+print("Total Price:", total)
+
+#Given a list of product prices, find the maximum, minimum, and average price
+prices = [500, 1200, 750, 300, 900]
+
+maximum = max(prices)
+minimum = min(prices)
+average = sum(prices) / len(prices)
+
+print("Maximum Price:", maximum)
+print("Minimum Price:", minimum)
+print("Average Price:", average)

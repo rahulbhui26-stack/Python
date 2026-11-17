@@ -1,0 +1,134 @@
+#Create a menu-driven program to perform arithmetic operations
+print("1. Addition")
+print("2. Subtraction")
+print("3. Multiplication")
+print("4. Division")
+
+choice = int(input("Enter your choice: "))
+
+a = float(input("Enter first number: "))
+b = float(input("Enter second number: "))
+
+if choice == 1:
+    print("Addition:", a + b)
+elif choice == 2:
+    print("Subtraction:", a - b)
+elif choice == 3:
+    print("Multiplication:", a * b)
+elif choice == 4:
+    if b != 0:
+        print("Division:", a / b)
+    else:
+        print("Cannot divide by zero")
+else:
+    print("Invalid choice")
+
+#Create a menu-driven program for a student
+name = input("Enter student name: ")
+marks = int(input("Enter student marks: "))
+
+print("\n1. Display Student Name")
+print("2. Display Student Marks")
+print("3. Display Student Grade")
+
+choice = int(input("Enter your choice: "))
+
+if choice == 1:
+    print("Student Name:", name)
+
+elif choice == 2:
+    print("Student Marks:", marks)
+
+elif choice == 3:
+    if marks >= 80 and marks <= 100:
+        print("Student Grade: A")
+    elif marks >= 60:
+        print("Student Grade: B")
+    elif marks >= 40:
+        print("Student Grade: C")
+    elif marks >= 0:
+        print("Student Grade: Fail")
+    else:
+        print("Invalid Marks")
+
+else:
+    print("Invalid Choice")
+
+#Create a menu-driven program for a basic banking system
+balance = 5000
+
+print("1. Check Balance")
+print("2. Deposit")
+print("3. Withdraw")
+
+choice = int(input("Enter your choice: "))
+
+if choice == 1:
+    print("Current Balance:", balance)
+
+elif choice == 2:
+    amount = float(input("Enter deposit amount: "))
+    if amount > 0:
+        balance = balance + amount
+        print("Amount Deposited Successfully")
+        print("Updated Balance:", balance)
+    else:
+        print("Enter a valid amount")
+
+elif choice == 3:
+    amount = float(input("Enter withdrawal amount: "))
+    if amount > 0 and amount <= balance:
+        balance = balance - amount
+        print("Withdrawal Successful")
+        print("Remaining Balance:", balance)
+    else:
+        print("Invalid amount or insufficient balance")
+
+else:
+    print("Invalid choice")
+
+#Create a menu-driven program to calculate areas
+import math
+
+print("1. Area of Rectangle")
+print("2. Area of Circle")
+print("3. Area of Square")
+
+choice = int(input("Enter your choice: "))
+
+if choice == 1:
+    length = float(input("Enter length: "))
+    breadth = float(input("Enter breadth: "))
+    print("Area of Rectangle:", length * breadth)
+
+elif choice == 2:
+    radius = float(input("Enter radius: "))
+    print("Area of Circle:", math.pi * radius * radius)
+
+elif choice == 3:
+    side = float(input("Enter side: "))
+    print("Area of Square:", side * side)
+
+else:
+    print("Invalid choice")
+
+#Create a menu-driven program for temperature conversion
+print("1. Celsius to Fahrenheit")
+print("2. Fahrenheit to Celsius")
+
+choice = int(input("Enter your choice: "))
+
+if choice == 1:
+    celsius = float(input("Enter temperature in Celsius: "))
+    fahrenheit = (celsius * 9/5) + 32
+    print("Temperature in Fahrenheit:", fahrenheit)
+
+elif choice == 2:
+    fahrenheit = float(input("Enter temperature in Fahrenheit: "))
+    celsius = (fahrenheit - 32) * 5/9
+    print("Temperature in Celsius:", celsius)
+
+else:
+    print("Invalid choice")
+
+

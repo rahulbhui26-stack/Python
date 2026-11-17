@@ -1,0 +1,87 @@
+#Print the student's name
+student = {
+    "name": "Rahul",
+    "age": 20,
+    "marks": 75,
+    "city": "Delhi"
+}
+
+print("Student Name:", student["name"])
+
+#Print the student's marks
+student = {
+    "name": "Rahul",
+    "age": 20,
+    "marks": 75,
+    "city": "Delhi"
+}
+
+print("Student Marks:", student["marks"])
+
+#Add a new key called "course"
+student = {
+    "name": "Rahul",
+    "age": 20,
+    "marks": 75,
+    "city": "Delhi"
+}
+
+student["course"] = "Python"
+
+print(student)
+
+#Update the student's marks to 85
+student = {
+    "name": "Rahul",
+    "age": 20,
+    "marks": 75,
+    "city": "Delhi"
+}
+
+student["marks"] = 85
+
+print(student)
+
+#Add an "email" key
+student = {
+    "name": "Rahul",
+    "age": 20,
+    "marks": 75,
+    "city": "Delhi"
+}
+
+student["email"] = "rahul@gmail.com"
+
+print(student)
+
+#Remove the "age" key
+student = {
+    "name": "Rahul",
+    "age": 20,
+    "marks": 75,
+    "city": "Delhi"
+}
+
+student.pop("age")
+
+print(student)
+
+#Print all keys using keys()
+student = {
+    "name": "Rahul",
+    "age": 20,
+    "marks": 75,
+    "city": "Delhi"
+}
+
+print("Student Keys:", student.keys())
+
+#Print all values using values()
+student = {
+    "name": "Rahul",
+    "age": 20,
+    "marks": 75,
+    "city": "Delhi"
+}
+
+print("Student Values:", student.values

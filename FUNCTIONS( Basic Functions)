@@ -1,0 +1,107 @@
+#Create a function that prints "Hello Python".
+def greet():
+    print("Hello Python")
+
+greet()
+
+#Create a function that accepts a name and prints a welcome message.
+def welcome(name):
+    print("Welcome", name)
+
+welcome("Rahul")
+
+#Create a function that accepts two numbers and returns their sum.
+def add(a, b):
+    return a + b
+
+result = add(10, 20)
+
+print("Sum:", result)
+
+#Create a function to calculate the square of a number.
+def square(num):
+    return num * num
+
+result = square(5)
+
+print("Square:", result)
+
+#Create a function to check whether a number is even or odd.
+def check_number(num):
+    if num % 2 == 0:
+        return "Even"
+    else:
+        return "Odd"
+
+num = int(input("Enter a number: "))
+
+print("Number is:", check_number(num))
+
+#Create a function to find the greater of two numbers.
+def greater(a, b):
+    if a > b:
+        return a
+    elif b > a:
+        return b
+    else:
+        return "Both numbers are equal"
+
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+
+print("Greater Number:", greater(a, b))
+
+#Create a function to calculate the area of a rectangle.
+def rectangle(length, breadth):
+    return length * breadth
+
+length = float(input("Enter length: "))
+breadth = float(input("Enter breadth: "))
+
+area = rectangle(length, breadth)
+
+print("Area of Rectangle:", area)
+
+#Create a function to calculate the factorial of a number.
+def factorial(num):
+    result = 1
+
+    for i in range(1, num + 1):
+        result = result * i
+
+    return result
+
+num = int(input("Enter a number: "))
+
+if num >= 0:
+    print("Factorial:", factorial(num))
+else:
+    print("Factorial is not defined for negative numbers")
+
+#Create a function that accepts marks and returns Pass or Fail.
+def check_result(marks):
+    if marks >= 40:
+        return "Pass"
+    else:
+        return "Fail"
+
+marks = int(input("Enter student marks: "))
+
+print("Student Result:", check_result(marks))
+
+#Create a function that accepts marks and returns the student's grade.
+def calculate_grade(marks):
+    if marks >= 80 and marks <= 100:
+        return "Grade A"
+    elif marks >= 60:
+        return "Grade B"
+    elif marks >= 40:
+        return "Grade C"
+    elif marks >= 0:
+        return "Fail"
+    else:
+        return "Invalid Marks"
+
+marks = int(input("Enter student marks: "))
+
+print("Student Grade:", calculate_grade(marks))

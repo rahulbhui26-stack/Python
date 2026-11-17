@@ -1,0 +1,54 @@
+#Create a tuple containing 5 numbers and print it.
+numbers = (10, 20, 30, 40, 50)
+
+print("Tuple:", numbers)
+
+#Print the first element of a tuple.
+numbers = (10, 20, 30, 40, 50)
+
+print("First Element:", numbers[0])
+
+#Print the last element of a tuple.
+numbers = (10, 20, 30, 40, 50)
+
+print("Last Element:", numbers[-1])
+
+#Find the length of a tuple using len().
+numbers = (10, 20, 30, 40, 50)
+
+print("Length of Tuple:", len(numbers))
+
+#Check whether a particular value exists in a tuple.
+numbers = (10, 20, 30, 40, 50)
+
+value = int(input("Enter a number: "))
+
+if value in numbers:
+    print("Value exists in the tuple")
+else:
+    print("Value does not exist in the tuple")
+
+#Count how many times a value occurs using count().
+numbers = (10, 20, 30, 20, 40, 20, 50)
+
+print("Count of 20:", numbers.count(20))
+
+#Find the index of a value using index().
+numbers = (10, 20, 30, 40, 50)
+
+print("Index of 30:", numbers.index(30))
+
+#Find the maximum value using max().
+numbers = (10, 20, 30, 40, 50)
+
+print("Maximum Value:", max(numbers))
+
+#Find the minimum value using min().
+numbers = (10, 20, 30, 40, 50)
+
+print("Minimum Value:", min(numbers))
+
+#Find the total of tuple values using sum().
+numbers = (10, 20, 30, 40, 50)
+
+print("Total:", sum(numbers))
